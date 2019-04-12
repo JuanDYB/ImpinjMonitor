@@ -281,6 +281,7 @@ namespace Rhesus.WS.Procedure
             // reader, hold all tag reports and events.
             settings.HoldReportsOnDisconnect = true;
             this._impinjReader.ApplySettings(settings);
+            this._impinjReader.SaveSettings();
         }
 
         private void ConfigReader_InventoryConfig(ReaderParameters ReaderParameters, Impinj.OctaneSdk.Settings settings = null)
@@ -331,6 +332,7 @@ namespace Rhesus.WS.Procedure
             }
             //Apply configuration
             this._impinjReader.ApplySettings(settings);
+            this._impinjReader.SaveSettings();
         }
 
         private void ConfigReader_Keepalive(Impinj.OctaneSdk.Settings settings = null)
