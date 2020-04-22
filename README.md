@@ -1,2 +1,2 @@
 # ImpinjMonitor
-.Net Windows Service to monitor Speedway RFID reader GPIO.
+.Net Windows Service to monitor Impinj Speedway RFID reader GPIO.
